@@ -1,0 +1,23 @@
+<html>
+
+<head>
+   <link rel="stylesheet" href="weather.css">
+</head>
+
+<body>
+    <div class = "container">
+      <h1> Check the weather in your city!</h1>
+      <p id="warning" class="warning">Please enter a city name!</p>
+      <input type= "text" placeholder="City name" id="cityName" required>
+      <button class="button" onclick="getWeather();">Get Weather</button>
+
+
+      <p class="weatherInfo" id="weatherInfo"></p>
+      <img  class ="pic" id = "pic"></img>
+
+    </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <script src = "weather.js"></script>
+</body>
+
+</html>
