@@ -1,25 +1,92 @@
-body {
-  font-family: sans-serif;
-  background-color: skyblue;
-  color: #333;
-  padding: 20px 0 28px 0;
+body{
   margin: 0;
+  padding:0;
+  font-family: sans-serif;
+  transition: 0.5s;
+}
+
+.toggle{
+  position: absolute;
+  top: 40px;
+  right: 50px;
+  background: #fff;
+  border: 2px solid #00151f;
+  height: 20px;
+  width: 45px;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+
+.toggle.active{
+  background: #00151f;
+  border: 2px solid #fff;
+}
+
+.toggle:before
+{
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 18px;
+  height: 16px;
+  background: #00151f;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+
+.toggle.active:before{
+  left: 27px;
+  background: #fff;
+}
+
+.container{
+  margin: 100px auto;
+  height: 400px;
+  width: 1000px;
+  text-align: center;
+   border: 3px solid #000;
+}
+
+.container h1{
+  text-align: center;
+  margin: 0 0 20px;
+  padding: 0;
+  color: #000;
+  transition: 0.5s;
+}
+
+.container p {
+  margin: 25px 0 20px;
+  padding: 0;
+  transition: 0.5s;
+  color: #000;
+  font-size: 18px;
+}
+
+body.night .container{
+   border: 3px solid #fff;
+}
+
+body.night{
+  background: #00151f;
+}
+
+body.night .container h1{
+  color: #fff;
+}
+
+body.night .container p{
+  color: #fff;
 }
 
 img {
   max-width: 100%;
-  height: 30%;
+  height: 50%;
 }
 
 .warning{
   color: red;
   display: none;
-}
-
-h1{
-  text-align: center;
-}
-.container{
-  text-align: center;
-   border: 3px solid rgba(255, 255, 255, 0.3);
 }

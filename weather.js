@@ -2,6 +2,13 @@ var info = document.getElementById('weatherInfo');
 var pic = document.getElementById('pic');
 var warning = document.getElementById('warning');
 
+$(document).ready(function(){
+  $('.toggle').click(function(){
+    $('.toggle').toggleClass('active')
+    $('body').toggleClass('night')
+  })
+});
+
 function getWeather(){
   var city = $('#cityName').val();
   if(city == ""){
