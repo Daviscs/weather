@@ -5,6 +5,30 @@ body{
   transition: 0.5s;
 }
 
+input{
+  width: 15%;
+  height: 8%;
+  outline: none;
+  border: 1px solid rgba(0,0,0,0.5);
+  font-family: Source Sans Pro;
+  font-weight: lighter;
+  font-size: 14px;
+  margin-right: 10px;
+  text-transform: capitalize;
+}
+
+button{
+  width: 15%;
+  height: 9%;
+  font-size: 16px;
+  background: skyblue;
+  font-weight: lighter;
+  color: #000;
+  border: 0px;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+
 .toggle{
   position: absolute;
   top: 40px;
@@ -43,15 +67,15 @@ body{
 
 .container{
   margin: 100px auto;
-  height: 400px;
-  width: 1000px;
+   height: 500px;
+  width: 80%;
   text-align: center;
    border: 3px solid #000;
 }
 
 .container h1{
   text-align: center;
-  margin: 0 0 20px;
+  margin: 15px 0 20px;
   padding: 0;
   color: #000;
   transition: 0.5s;
@@ -81,6 +105,14 @@ body.night .container p{
   color: #fff;
 }
 
+body.night .fa-sun{
+  color: #fff;
+}
+
+body.night .fa-moon{
+  color: #fff;
+}
+
 img {
   max-width: 100%;
   height: 50%;
@@ -89,4 +121,16 @@ img {
 .warning{
   color: red;
   display: none;
+}
+
+.fa-sun{
+  position: absolute;
+  top: 44px;
+  right: 105px;
+}
+
+.fa-moon{
+  position: absolute;
+  top: 44px;
+  right: 30px;
 }

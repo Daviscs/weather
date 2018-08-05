@@ -25,6 +25,7 @@ function weatherCall(weatherData){
   var city = weatherData.name;
   var temp = weatherData.main.temp;
   var view = weatherData.weather[0].main;
+  console.log(temp);
   view = view.toLowerCase();
   temp = (temp * (9/5) - 459.67).toFixed();
 
